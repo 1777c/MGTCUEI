@@ -38,7 +38,7 @@ The other formal protocol names are `warm_k10`, `disease_cold_k10` and `strict_b
 
 Both comparisons fit on development Train, select the checkpoint and threshold on Dev-A, and report on pooled Dev-B, Dev-C and Dev-D. For a component ablation, run `python scripts/train.py --protocol cold --arm evidence_semantic --reader non_query`. The other component options are `--cuei-span`, `--gate` and `--memory`.
 
-**Graph encoders (Figure 5(e), Table S12)**
+**Graph encoders**
 
 ```bash
 python scripts/s2_graph_executor.py --arms GE01,GE02R,GE03,GE04,GE05,GE06
@@ -46,7 +46,7 @@ python scripts/s2_graph_executor.py --arms GE01,GE02R,GE03,GE04,GE05,GE06
 
 The arms follow the order GCN-1L, GCN-2L matched replay, GCN-3L, GCN-4L, GAT-2L and GraphSAGE-2L. Stages `A,B,FINAL` run upstream graph fitting, joint fitting and pooled evaluation. The graph comparison uses `LLM_ROOT` for MMed-Llama.
 
-**Language backbones (Figure 5(f), Table S13)**
+**Language backbones**
 
 Set `LLM_ROOT`, `META_LLAMA_ROOT` or `BIOBERT_ROOT` to the corresponding local model directory. The recorded sources and revisions for [Meta-Llama-3-8B](https://huggingface.co/NousResearch/Meta-Llama-3-8B/tree/315b20096dc791d381d514deb5f8bd9c8d6d3061) and [BioBERT](https://huggingface.co/dmis-lab/biobert-base-cased-v1.2/tree/67c9c25b46986521ca33df05d8540da1210b3256) are in [LANGUAGE_ARMS.json](configs/LANGUAGE_ARMS.json).
 
