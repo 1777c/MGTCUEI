@@ -1,0 +1,94 @@
+{
+  "common_config": {
+    "cuei_span": "U29-2L",
+    "reader": "cross_attention",
+    "gate": "learned",
+    "lambda": 0.01,
+    "memory": "typed_ddi",
+    "prompt": "semantic_compact_v1",
+    "seed": 2026,
+    "gcn_lifecycle": "prefit_then_joint",
+    "schedule": {
+      "batch_size": 32,
+      "microbatch": 32,
+      "eval_batch_size": 32,
+      "checkpoint_every_steps": 20,
+      "gradient_clip": 1.0,
+      "learning_rate": 0.001,
+      "max_epochs": 5,
+      "patience": 2,
+      "weight_decay": 0.0,
+      "scheduler": "none",
+      "optimizer": "Adam"
+    }
+  },
+  "arms": {
+    "LANG01_MMED_MATCHED_REFERENCE": {
+      "backbone": "MMED",
+      "class": "MATCHED_LLAMA_BACKBONE_COMPARISON",
+      "geometry": {
+        "num_hidden_layers": 32,
+        "hidden_size": 4096,
+        "vocab_size": 128256,
+        "num_attention_heads": 32,
+        "num_key_value_heads": 8,
+        "model_type": "llama",
+        "stored_dtype": "float32"
+      },
+      "injection_layers": [
+        29,
+        30
+      ],
+      "readout": "FROZEN_LM_TRUE_FALSE",
+      "authority_label": "data/llm_contract",
+      "repo_id": "Henrychur/MMed-Llama-3-8B",
+      "revision": null,
+      "root_env": "LLM_ROOT",
+      "directory": "MMed-Llama-3-8B"
+    },
+    "LANG02_META_LLAMA3_8B": {
+      "backbone": "META_LLAMA",
+      "class": "MATCHED_LLAMA_BACKBONE_COMPARISON",
+      "geometry": {
+        "num_hidden_layers": 32,
+        "hidden_size": 4096,
+        "vocab_size": 128256,
+        "num_attention_heads": 32,
+        "num_key_value_heads": 8,
+        "model_type": "llama"
+      },
+      "injection_layers": [
+        29,
+        30
+      ],
+      "readout": "FROZEN_LM_TRUE_FALSE",
+      "authority_label": "models_external/Meta-Llama-3-8B",
+      "repo_id": "NousResearch/Meta-Llama-3-8B",
+      "revision": "315b20096dc791d381d514deb5f8bd9c8d6d3061",
+      "root_env": "META_LLAMA_ROOT",
+      "directory": "Meta-Llama-3-8B"
+    },
+    "LANG03_BIOBERT_ENCODER_CONTROL": {
+      "backbone": "BIOBERT",
+      "class": "BIOMEDICAL_ENCODER_CONTROL",
+      "geometry": {
+        "num_hidden_layers": 12,
+        "hidden_size": 768,
+        "vocab_size": 28996,
+        "num_attention_heads": 12,
+        "model_type": "bert",
+        "tokenizer": "WordPiece, CASED"
+      },
+      "injection_layers": [
+        10,
+        11
+      ],
+      "readout": "CLS_BINARY_CLASSIFICATION_HEAD",
+      "authority_label": "models_external/BioBERT-base-cased-v1.2",
+      "repo_id": "dmis-lab/biobert-base-cased-v1.2",
+      "revision": "67c9c25b46986521ca33df05d8540da1210b3256",
+      "root_env": "BIOBERT_ROOT",
+      "directory": "BioBERT-base-cased-v1.2"
+    }
+  }
+}

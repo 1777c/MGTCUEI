@@ -1,0 +1,1501 @@
+{
+  "benchmark": "HYBRID50_V1",
+  "benchmark_identity": "c8e0305feb4e84f3c5015e720d7a8f65f9c1819cd55726d8c4b87e5b7295d98e",
+  "parent_archive_sha256": "bc5585233987cdeb4ffb46b116c12fa0912d56031c4f20d656487ba661fbfd3f",
+  "prompt_parity": {
+    "basic_name_only_v1": {
+      "complete_rows": 651855,
+      "old_overlap_rows": 45913,
+      "overlap_fields_identical": true,
+      "sha256": "fb905157e410f3fb8318081f690fd758774045704a831c3130923b8116ea00ff"
+    },
+    "semantic_compact_v1": {
+      "complete_rows": 651855,
+      "old_overlap_rows": 45913,
+      "overlap_fields_identical": true,
+      "sha256": "a52362a457c4be753c3c9c1bf588b9cc4ac4d8e44b1392ab90bdf237583d4eef"
+    }
+  },
+  "protocols": {
+    "disease_cold_k10": {
+      "0": {
+        "graph": "data/benchmarks/disease_cold_k10/fold_0/A_ds.npz",
+        "test": {
+          "count": 3276,
+          "fold": 0,
+          "membership_rows": 3276,
+          "negative_count": 1638,
+          "pair_identity": "0084394e667562bc960848a3d9266f781aa86eeb644b505e58d9c5d2bbf0c9b7",
+          "partition": "test",
+          "path": "data/benchmarks/disease_cold_k10/fold_0/test.parquet",
+          "protocol": "disease_cold_k10",
+          "random_count": 819,
+          "rn_count": 819,
+          "sha256": "c864642e12c4526b2257e8f048d621d0c90a8d3ae7c135fdcdd386ef5a049753"
+        },
+        "train": {
+          "count": 26208,
+          "fold": 0,
+          "membership_rows": 26208,
+          "negative_count": 13104,
+          "pair_identity": "72f4bdd581cf49e9373eaff8a4b2ecc3d9dfa49aad7df650ededd4bc1eba076f",
+          "partition": "train",
+          "path": "data/benchmarks/disease_cold_k10/fold_0/train.parquet",
+          "protocol": "disease_cold_k10",
+          "random_count": 6552,
+          "rn_count": 6552,
+          "sha256": "7e032010788f9746b97b8ce17a33dd80362a615030733e3900ab2ea17a41e2f6"
+        },
+        "val": {
+          "count": 3276,
+          "fold": 0,
+          "membership_rows": 3276,
+          "negative_count": 1638,
+          "pair_identity": "a7a0fd971f1056abc279d64665553f25daf4a2c044bfb7a12fb0b2ca18cb9762",
+          "partition": "val",
+          "path": "data/benchmarks/disease_cold_k10/fold_0/val.parquet",
+          "protocol": "disease_cold_k10",
+          "random_count": 819,
+          "rn_count": 819,
+          "sha256": "50aea9eeffeafd5dea813b6683b165607bc89d5d74bf5f93519854b854b03a50"
+        }
+      },
+      "1": {
+        "graph": "data/benchmarks/disease_cold_k10/fold_1/A_ds.npz",
+        "test": {
+          "count": 3276,
+          "fold": 1,
+          "membership_rows": 3276,
+          "negative_count": 1638,
+          "pair_identity": "32e9a8b1bf7a8c303400d43cc8022b3a1656a45595e83a7ed3eed3b609cd6cb6",
+          "partition": "test",
+          "path": "data/benchmarks/disease_cold_k10/fold_1/test.parquet",
+          "protocol": "disease_cold_k10",
+          "random_count": 819,
+          "rn_count": 819,
+          "sha256": "4ac42e37b427b63495bfc58db4374e80a5f50a37d5d159c3dc84ee98416d385a"
+        },
+        "train": {
+          "count": 26208,
+          "fold": 1,
+          "membership_rows": 26208,
+          "negative_count": 13104,
+          "pair_identity": "5d6405b1ff2136c7a29da8009c6df12530f8535d794c70f16a0292a7d8ddb405",
+          "partition": "train",
+          "path": "data/benchmarks/disease_cold_k10/fold_1/train.parquet",
+          "protocol": "disease_cold_k10",
+          "random_count": 6552,
+          "rn_count": 6552,
+          "sha256": "dc7c3cafde33f6b5848a595a13d0e5a7577d05f7058dba258dca19725544ff6c"
+        },
+        "val": {
+          "count": 3276,
+          "fold": 1,
+          "membership_rows": 3276,
+          "negative_count": 1638,
+          "pair_identity": "76d6f4f77e6e1befaa51b521df2542223f69eb483838b49970bbfd306be7933d",
+          "partition": "val",
+          "path": "data/benchmarks/disease_cold_k10/fold_1/val.parquet",
+          "protocol": "disease_cold_k10",
+          "random_count": 819,
+          "rn_count": 819,
+          "sha256": "785c917c9ca494f49deb744f74b27f19d23ee86954ca71c35e38208e3a00d151"
+        }
+      },
+      "2": {
+        "graph": "data/benchmarks/disease_cold_k10/fold_2/A_ds.npz",
+        "test": {
+          "count": 3276,
+          "fold": 2,
+          "membership_rows": 3276,
+          "negative_count": 1638,
+          "pair_identity": "24203e1fd0ff32d9eee8781aa3486b14bebd75186414d04e4e33fcc63e446e0b",
+          "partition": "test",
+          "path": "data/benchmarks/disease_cold_k10/fold_2/test.parquet",
+          "protocol": "disease_cold_k10",
+          "random_count": 819,
+          "rn_count": 819,
+          "sha256": "591e4555ee8e41bbd0ea1c613e2cf0847a63450378f4ba171a0d1ee078789007"
+        },
+        "train": {
+          "count": 26208,
+          "fold": 2,
+          "membership_rows": 26208,
+          "negative_count": 13104,
+          "pair_identity": "1d25b0252886b347bc5b4d267faf3cac081b4d34107344b406b204fe34ad0a70",
+          "partition": "train",
+          "path": "data/benchmarks/disease_cold_k10/fold_2/train.parquet",
+          "protocol": "disease_cold_k10",
+          "random_count": 6552,
+          "rn_count": 6552,
+          "sha256": "cc1f313c09e006c54cb9567e13ee5d71c4f782f9b07ad40e15818f3f50d2800f"
+        },
+        "val": {
+          "count": 3276,
+          "fold": 2,
+          "membership_rows": 3276,
+          "negative_count": 1638,
+          "pair_identity": "ae97097db8ad427b2f3f3daf3785bf3459e9084ec639696845cec6449aa06cfc",
+          "partition": "val",
+          "path": "data/benchmarks/disease_cold_k10/fold_2/val.parquet",
+          "protocol": "disease_cold_k10",
+          "random_count": 819,
+          "rn_count": 819,
+          "sha256": "9cd5a2e5d6d678bc84315de627f93e09a6cbc9c3a7016a865d2b76ff109594e9"
+        }
+      },
+      "3": {
+        "graph": "data/benchmarks/disease_cold_k10/fold_3/A_ds.npz",
+        "test": {
+          "count": 3276,
+          "fold": 3,
+          "membership_rows": 3276,
+          "negative_count": 1638,
+          "pair_identity": "9b5c393ed0876bf00ebe945869f42f71656c34946737e58cb2d83eddc6c3c0ce",
+          "partition": "test",
+          "path": "data/benchmarks/disease_cold_k10/fold_3/test.parquet",
+          "protocol": "disease_cold_k10",
+          "random_count": 819,
+          "rn_count": 819,
+          "sha256": "ffad404e550d348293e07711cad2bc1925bedc6ff462fd77e93a4c14c0d1c8e0"
+        },
+        "train": {
+          "count": 26208,
+          "fold": 3,
+          "membership_rows": 26208,
+          "negative_count": 13104,
+          "pair_identity": "ceacc4ae8a62660cb120e973b17fbd84598f05c1185280bb0e76d427ad22e71a",
+          "partition": "train",
+          "path": "data/benchmarks/disease_cold_k10/fold_3/train.parquet",
+          "protocol": "disease_cold_k10",
+          "random_count": 6552,
+          "rn_count": 6552,
+          "sha256": "54f217df365c9020085e92332abcc357ad77fe27dca838d349c15e34aee195c8"
+        },
+        "val": {
+          "count": 3276,
+          "fold": 3,
+          "membership_rows": 3276,
+          "negative_count": 1638,
+          "pair_identity": "56c6bb9afd6450980d9731bbea065a7560928154b291f339e08f8ba3e8a24ae6",
+          "partition": "val",
+          "path": "data/benchmarks/disease_cold_k10/fold_3/val.parquet",
+          "protocol": "disease_cold_k10",
+          "random_count": 819,
+          "rn_count": 819,
+          "sha256": "6eb69e027e677a4b50342a706649ca6d4f3439b0177e0c83e013333e02a319cf"
+        }
+      },
+      "4": {
+        "graph": "data/benchmarks/disease_cold_k10/fold_4/A_ds.npz",
+        "test": {
+          "count": 3276,
+          "fold": 4,
+          "membership_rows": 3276,
+          "negative_count": 1638,
+          "pair_identity": "9a376242a89cff6bb999548e9b6ea094e97bb61ab2a0d0ee823fabe9b47c7601",
+          "partition": "test",
+          "path": "data/benchmarks/disease_cold_k10/fold_4/test.parquet",
+          "protocol": "disease_cold_k10",
+          "random_count": 819,
+          "rn_count": 819,
+          "sha256": "aa4a36b126387e16f8cdc57d525492b37a6524ca9ef5a13ede6635b0ba208314"
+        },
+        "train": {
+          "count": 26208,
+          "fold": 4,
+          "membership_rows": 26208,
+          "negative_count": 13104,
+          "pair_identity": "b6fb7b84549bc244c79c627ecc0a0b3ecf85d2f070c47d21aa3251dbe8d75809",
+          "partition": "train",
+          "path": "data/benchmarks/disease_cold_k10/fold_4/train.parquet",
+          "protocol": "disease_cold_k10",
+          "random_count": 6552,
+          "rn_count": 6552,
+          "sha256": "54737c50d4bc2589df21d6907c68d91f3daa335f4d604fc3a0f67db87b035870"
+        },
+        "val": {
+          "count": 3276,
+          "fold": 4,
+          "membership_rows": 3276,
+          "negative_count": 1638,
+          "pair_identity": "2d0b0e2d9e66682c756fd04fe235a0d508d6651cedab38e57cd8be0347710e5a",
+          "partition": "val",
+          "path": "data/benchmarks/disease_cold_k10/fold_4/val.parquet",
+          "protocol": "disease_cold_k10",
+          "random_count": 819,
+          "rn_count": 819,
+          "sha256": "355e222ff02ae8b0777e613d72a752d6f7bc9b62a9c8e9421f4fe439efe5a0bc"
+        }
+      },
+      "5": {
+        "graph": "data/benchmarks/disease_cold_k10/fold_5/A_ds.npz",
+        "test": {
+          "count": 3276,
+          "fold": 5,
+          "membership_rows": 3276,
+          "negative_count": 1638,
+          "pair_identity": "a12de78c6b3a6077412964a01dc42f4ea3a32d0a180520afe9203807bfe1b37f",
+          "partition": "test",
+          "path": "data/benchmarks/disease_cold_k10/fold_5/test.parquet",
+          "protocol": "disease_cold_k10",
+          "random_count": 819,
+          "rn_count": 819,
+          "sha256": "37dba192aa308d31be89bade1337d0f3d00c886c2eee69adb883290be25063f6"
+        },
+        "train": {
+          "count": 26208,
+          "fold": 5,
+          "membership_rows": 26208,
+          "negative_count": 13104,
+          "pair_identity": "8596dd6c6feab64892f8e03874e1b6e7c6eb885c3848cfdbcc0a87892abfd594",
+          "partition": "train",
+          "path": "data/benchmarks/disease_cold_k10/fold_5/train.parquet",
+          "protocol": "disease_cold_k10",
+          "random_count": 6552,
+          "rn_count": 6552,
+          "sha256": "573b71b9c41530023ef6d066b0278933e7df277c1165527b8b3a86139715a456"
+        },
+        "val": {
+          "count": 3276,
+          "fold": 5,
+          "membership_rows": 3276,
+          "negative_count": 1638,
+          "pair_identity": "58226e8b6e7af7e85217c253dd19abe46375598ea35416a631ce777156a0e54a",
+          "partition": "val",
+          "path": "data/benchmarks/disease_cold_k10/fold_5/val.parquet",
+          "protocol": "disease_cold_k10",
+          "random_count": 819,
+          "rn_count": 819,
+          "sha256": "627c8153b55141bbc09df9969ce46085164b70c5cf1beabba0e11840a73cc906"
+        }
+      },
+      "6": {
+        "graph": "data/benchmarks/disease_cold_k10/fold_6/A_ds.npz",
+        "test": {
+          "count": 3276,
+          "fold": 6,
+          "membership_rows": 3276,
+          "negative_count": 1638,
+          "pair_identity": "3c10a5cc0ce25dbf0aba1aff807c13d948b311bfe183da2222192fc1c7015a26",
+          "partition": "test",
+          "path": "data/benchmarks/disease_cold_k10/fold_6/test.parquet",
+          "protocol": "disease_cold_k10",
+          "random_count": 819,
+          "rn_count": 819,
+          "sha256": "896f6c92721db7c4c4f70191b10f611da8644dc4b84cbceda739cdb5099c160b"
+        },
+        "train": {
+          "count": 26208,
+          "fold": 6,
+          "membership_rows": 26208,
+          "negative_count": 13104,
+          "pair_identity": "a69e102bcb01c217e12dfe0f40b38f997a9b51d3006a5568f7a9afbd658c7bf8",
+          "partition": "train",
+          "path": "data/benchmarks/disease_cold_k10/fold_6/train.parquet",
+          "protocol": "disease_cold_k10",
+          "random_count": 6552,
+          "rn_count": 6552,
+          "sha256": "ffc8fbb3a601107ebd3887fe0a8a7c3c89982ee9d3e08895d6371e34eb5d9a56"
+        },
+        "val": {
+          "count": 3276,
+          "fold": 6,
+          "membership_rows": 3276,
+          "negative_count": 1638,
+          "pair_identity": "30ef0617e02facce4f074b19ef602fb4e82e66ada9048438fa97e08fca66b97f",
+          "partition": "val",
+          "path": "data/benchmarks/disease_cold_k10/fold_6/val.parquet",
+          "protocol": "disease_cold_k10",
+          "random_count": 819,
+          "rn_count": 819,
+          "sha256": "b601c66143018591042083e0b7039e1209756672259e83adb72e1e87b71b1122"
+        }
+      },
+      "7": {
+        "graph": "data/benchmarks/disease_cold_k10/fold_7/A_ds.npz",
+        "test": {
+          "count": 3276,
+          "fold": 7,
+          "membership_rows": 3276,
+          "negative_count": 1638,
+          "pair_identity": "9293adfa90c4783db0c3de2a39a62d900e34eb05befc5ab9eca0b02589ac8c70",
+          "partition": "test",
+          "path": "data/benchmarks/disease_cold_k10/fold_7/test.parquet",
+          "protocol": "disease_cold_k10",
+          "random_count": 819,
+          "rn_count": 819,
+          "sha256": "4f1e83764ad683de25b36d63046d2e29da6d2016ee2ca7888e9527725aafc745"
+        },
+        "train": {
+          "count": 26208,
+          "fold": 7,
+          "membership_rows": 26208,
+          "negative_count": 13104,
+          "pair_identity": "f9479225cf67174ccd11d1b57b36da94234074ed24ac82a30e7aa96cb87a209c",
+          "partition": "train",
+          "path": "data/benchmarks/disease_cold_k10/fold_7/train.parquet",
+          "protocol": "disease_cold_k10",
+          "random_count": 6552,
+          "rn_count": 6552,
+          "sha256": "bb0003249716a575fddfc781bd085377add64f52a45da7cb6d19ed8f21bfad4f"
+        },
+        "val": {
+          "count": 3276,
+          "fold": 7,
+          "membership_rows": 3276,
+          "negative_count": 1638,
+          "pair_identity": "9b4c0863c0ad06aa3de1a84f53adc02f2df8b0f7dc89e7dc784c476651664273",
+          "partition": "val",
+          "path": "data/benchmarks/disease_cold_k10/fold_7/val.parquet",
+          "protocol": "disease_cold_k10",
+          "random_count": 819,
+          "rn_count": 819,
+          "sha256": "ba57da843042df35d5da92d0d824cb5b4ab17beec542173f21592f168211c196"
+        }
+      },
+      "8": {
+        "graph": "data/benchmarks/disease_cold_k10/fold_8/A_ds.npz",
+        "test": {
+          "count": 3276,
+          "fold": 8,
+          "membership_rows": 3276,
+          "negative_count": 1638,
+          "pair_identity": "aba58b5fe03098f08f00f088be4a426016fc9fc7b210e7e0e61cf053098b9330",
+          "partition": "test",
+          "path": "data/benchmarks/disease_cold_k10/fold_8/test.parquet",
+          "protocol": "disease_cold_k10",
+          "random_count": 819,
+          "rn_count": 819,
+          "sha256": "38e1f9a044245c506050a667321aba36eb89b8fb830fc86534b59cb55b933a6d"
+        },
+        "train": {
+          "count": 26208,
+          "fold": 8,
+          "membership_rows": 26208,
+          "negative_count": 13104,
+          "pair_identity": "869498dd7e4ae0b4dd4d8413642f4c73503addec5d778b66b2587dc12171ae00",
+          "partition": "train",
+          "path": "data/benchmarks/disease_cold_k10/fold_8/train.parquet",
+          "protocol": "disease_cold_k10",
+          "random_count": 6552,
+          "rn_count": 6552,
+          "sha256": "1676d629c4c41a4e39ff896b256c5dcfbb81c7afc763db02aeee70279a3f4835"
+        },
+        "val": {
+          "count": 3276,
+          "fold": 8,
+          "membership_rows": 3276,
+          "negative_count": 1638,
+          "pair_identity": "07a0d2b136fa90e8c162f8e597083bd02bdcb3705e73dd6477ef73ccbd4b529e",
+          "partition": "val",
+          "path": "data/benchmarks/disease_cold_k10/fold_8/val.parquet",
+          "protocol": "disease_cold_k10",
+          "random_count": 819,
+          "rn_count": 819,
+          "sha256": "4ff22a8c75f7ffef549a40b5503add0366370274f757c89cecf8789d2dbd1e1f"
+        }
+      },
+      "9": {
+        "graph": "data/benchmarks/disease_cold_k10/fold_9/A_ds.npz",
+        "test": {
+          "count": 3276,
+          "fold": 9,
+          "membership_rows": 3276,
+          "negative_count": 1638,
+          "pair_identity": "557878d6735f263d31c76dbd429d0832349bc0337b95221e7f782052ae42d694",
+          "partition": "test",
+          "path": "data/benchmarks/disease_cold_k10/fold_9/test.parquet",
+          "protocol": "disease_cold_k10",
+          "random_count": 819,
+          "rn_count": 819,
+          "sha256": "556d0aaa6a6bee7c3db3a35ab65f8fa08ef80ab15c422abe27efb3b32ed26d23"
+        },
+        "train": {
+          "count": 26208,
+          "fold": 9,
+          "membership_rows": 26208,
+          "negative_count": 13104,
+          "pair_identity": "31c88f26ace36623dd56484731e31fb23d4605e3031d10ea69bd2a62f2bd5080",
+          "partition": "train",
+          "path": "data/benchmarks/disease_cold_k10/fold_9/train.parquet",
+          "protocol": "disease_cold_k10",
+          "random_count": 6552,
+          "rn_count": 6552,
+          "sha256": "8cd65d780945ecf1365133e61d4f203a7603582c81be4aa922500f0d495e8839"
+        },
+        "val": {
+          "count": 3276,
+          "fold": 9,
+          "membership_rows": 3276,
+          "negative_count": 1638,
+          "pair_identity": "bc911a5e8e8971de5cf1499dec44635f7bd73adbf6198d72a25ed08843e5feba",
+          "partition": "val",
+          "path": "data/benchmarks/disease_cold_k10/fold_9/val.parquet",
+          "protocol": "disease_cold_k10",
+          "random_count": 819,
+          "rn_count": 819,
+          "sha256": "cca4d0aa98fb0df5683e7a17b73fd679a81fd509961d0387fce27e084ffdc330"
+        }
+      }
+    },
+    "drug_cold_k10": {
+      "0": {
+        "graph": "data/benchmarks/drug_cold_k10/fold_0/A_ds.npz",
+        "test": {
+          "count": 3276,
+          "fold": 0,
+          "membership_rows": 3276,
+          "negative_count": 1638,
+          "pair_identity": "9f0c826d8bc211831f0bfa50012fd6bf75adb6807a0fc24417e96dd321bded42",
+          "partition": "test",
+          "path": "data/benchmarks/drug_cold_k10/fold_0/test.parquet",
+          "protocol": "drug_cold_k10",
+          "random_count": 819,
+          "rn_count": 819,
+          "sha256": "77ee4d954c6865ceb5e9991621bb9ebcf3abfe5226b391664c596547bbab97d7"
+        },
+        "train": {
+          "count": 26208,
+          "fold": 0,
+          "membership_rows": 26208,
+          "negative_count": 13104,
+          "pair_identity": "e5979bfd97168d1374adca7626f3888d295310aee56d6779bff356322ca888c3",
+          "partition": "train",
+          "path": "data/benchmarks/drug_cold_k10/fold_0/train.parquet",
+          "protocol": "drug_cold_k10",
+          "random_count": 6552,
+          "rn_count": 6552,
+          "sha256": "0557b1abcf1cbff8bba73d12b5220042e9b94de9adccabc65060fc909011c370"
+        },
+        "val": {
+          "count": 3276,
+          "fold": 0,
+          "membership_rows": 3276,
+          "negative_count": 1638,
+          "pair_identity": "082df47552288137e8ce26d5808b7d03db58ce79e01fbf6d481543d1c043027a",
+          "partition": "val",
+          "path": "data/benchmarks/drug_cold_k10/fold_0/val.parquet",
+          "protocol": "drug_cold_k10",
+          "random_count": 819,
+          "rn_count": 819,
+          "sha256": "c3574703d10ed36670172be8dcacccd4bd470948445ed25348d716027a8e7750"
+        }
+      },
+      "1": {
+        "graph": "data/benchmarks/drug_cold_k10/fold_1/A_ds.npz",
+        "test": {
+          "count": 3276,
+          "fold": 1,
+          "membership_rows": 3276,
+          "negative_count": 1638,
+          "pair_identity": "61a71d8517f2926cde1b9e299bf7ad9c5251464f62f00556d116442923aa6d91",
+          "partition": "test",
+          "path": "data/benchmarks/drug_cold_k10/fold_1/test.parquet",
+          "protocol": "drug_cold_k10",
+          "random_count": 819,
+          "rn_count": 819,
+          "sha256": "59166c3af534cc4ef09a937c42dd70d61dbf5835d8fe48478fc9ae38042cdc92"
+        },
+        "train": {
+          "count": 26208,
+          "fold": 1,
+          "membership_rows": 26208,
+          "negative_count": 13104,
+          "pair_identity": "c9e1949cff280e3f396e1c4b483f5d3b42c0e48e8c1ed846c2548bbde408af45",
+          "partition": "train",
+          "path": "data/benchmarks/drug_cold_k10/fold_1/train.parquet",
+          "protocol": "drug_cold_k10",
+          "random_count": 6552,
+          "rn_count": 6552,
+          "sha256": "8cd762148579857615f75492e1d7434299fe1ef68bc6a75af57f0ef8f694ff41"
+        },
+        "val": {
+          "count": 3276,
+          "fold": 1,
+          "membership_rows": 3276,
+          "negative_count": 1638,
+          "pair_identity": "60f0ab9bb0033fec563d2db843ab61a160ff91c9d928cdde417ddea60a649ee9",
+          "partition": "val",
+          "path": "data/benchmarks/drug_cold_k10/fold_1/val.parquet",
+          "protocol": "drug_cold_k10",
+          "random_count": 819,
+          "rn_count": 819,
+          "sha256": "d2b67d32aced9f48a16b2a8529b0c507d5fa20b3483d215ce117783831a54efb"
+        }
+      },
+      "2": {
+        "graph": "data/benchmarks/drug_cold_k10/fold_2/A_ds.npz",
+        "test": {
+          "count": 3276,
+          "fold": 2,
+          "membership_rows": 3276,
+          "negative_count": 1638,
+          "pair_identity": "31bb114d07fb3346cc7317db6098486f1daf7dcece1faf8e1a3b6a6539d510f5",
+          "partition": "test",
+          "path": "data/benchmarks/drug_cold_k10/fold_2/test.parquet",
+          "protocol": "drug_cold_k10",
+          "random_count": 819,
+          "rn_count": 819,
+          "sha256": "2a0442663454b2290b504014889497c5f7a0c950b88657a8b7a7b2cc60faf3a6"
+        },
+        "train": {
+          "count": 26208,
+          "fold": 2,
+          "membership_rows": 26208,
+          "negative_count": 13104,
+          "pair_identity": "4def11f5e75b411f5b14f25681897fee5f82e575e57866f6dfdd826fde5092fa",
+          "partition": "train",
+          "path": "data/benchmarks/drug_cold_k10/fold_2/train.parquet",
+          "protocol": "drug_cold_k10",
+          "random_count": 6552,
+          "rn_count": 6552,
+          "sha256": "b015b6662060a02672d9f03a710dd29e2338859b7aed6d7b01b1d9c1b315edda"
+        },
+        "val": {
+          "count": 3276,
+          "fold": 2,
+          "membership_rows": 3276,
+          "negative_count": 1638,
+          "pair_identity": "aa9ecdac268a6155680d582a810b6108204d01935b9ff61bb30705d2e74663d1",
+          "partition": "val",
+          "path": "data/benchmarks/drug_cold_k10/fold_2/val.parquet",
+          "protocol": "drug_cold_k10",
+          "random_count": 819,
+          "rn_count": 819,
+          "sha256": "719459df190f142c9688445d8a9b2ecf6e93ea72a3f689615f3b2d5f2ea6f900"
+        }
+      },
+      "3": {
+        "graph": "data/benchmarks/drug_cold_k10/fold_3/A_ds.npz",
+        "test": {
+          "count": 3276,
+          "fold": 3,
+          "membership_rows": 3276,
+          "negative_count": 1638,
+          "pair_identity": "858a2b77e26784e582acea7627098596551d16062dad7cc06034855e0fd27ab2",
+          "partition": "test",
+          "path": "data/benchmarks/drug_cold_k10/fold_3/test.parquet",
+          "protocol": "drug_cold_k10",
+          "random_count": 819,
+          "rn_count": 819,
+          "sha256": "0ebc0100167cc8943e5701d21d416c567f6ca1d77e76acc9b40fe04c84888507"
+        },
+        "train": {
+          "count": 26208,
+          "fold": 3,
+          "membership_rows": 26208,
+          "negative_count": 13104,
+          "pair_identity": "29881b253d7b5f15ed3d3266956a17367228ca0f1c75c35105914e5782292d7a",
+          "partition": "train",
+          "path": "data/benchmarks/drug_cold_k10/fold_3/train.parquet",
+          "protocol": "drug_cold_k10",
+          "random_count": 6552,
+          "rn_count": 6552,
+          "sha256": "6b6a4fcd0440dc4d2ef14d09157aabf99fc32d5c82bad1bd86196ba7a642c9fa"
+        },
+        "val": {
+          "count": 3276,
+          "fold": 3,
+          "membership_rows": 3276,
+          "negative_count": 1638,
+          "pair_identity": "f4f396a839a372fdac0cbbc18c79d263524922ca67911f0188b52cd3ff233c88",
+          "partition": "val",
+          "path": "data/benchmarks/drug_cold_k10/fold_3/val.parquet",
+          "protocol": "drug_cold_k10",
+          "random_count": 819,
+          "rn_count": 819,
+          "sha256": "24fd3a700b2ffcd985026cdad6155bcca404baa54ee06742d21f9dc8b4c12660"
+        }
+      },
+      "4": {
+        "graph": "data/benchmarks/drug_cold_k10/fold_4/A_ds.npz",
+        "test": {
+          "count": 3276,
+          "fold": 4,
+          "membership_rows": 3276,
+          "negative_count": 1638,
+          "pair_identity": "89e9c676dc02dca3dd2f98124054817f16fb4c412f7fbf53a9d835f4fbd17e21",
+          "partition": "test",
+          "path": "data/benchmarks/drug_cold_k10/fold_4/test.parquet",
+          "protocol": "drug_cold_k10",
+          "random_count": 819,
+          "rn_count": 819,
+          "sha256": "bf0ae286d6b6ce0c9edfa8f99a160310c9d28cc51148d0323ec82d57b7bbdead"
+        },
+        "train": {
+          "count": 26208,
+          "fold": 4,
+          "membership_rows": 26208,
+          "negative_count": 13104,
+          "pair_identity": "1f0dea27887a301280347627488ee97189a2818e9299ea42e132b2296a0ccdc7",
+          "partition": "train",
+          "path": "data/benchmarks/drug_cold_k10/fold_4/train.parquet",
+          "protocol": "drug_cold_k10",
+          "random_count": 6552,
+          "rn_count": 6552,
+          "sha256": "c5752a6f1110280f149842a72c58ff688dba24a72410704646ee02bdee5fe549"
+        },
+        "val": {
+          "count": 3276,
+          "fold": 4,
+          "membership_rows": 3276,
+          "negative_count": 1638,
+          "pair_identity": "852c46ca8ca850761708730d177d51ff591db80806c234185d77922b99a866d0",
+          "partition": "val",
+          "path": "data/benchmarks/drug_cold_k10/fold_4/val.parquet",
+          "protocol": "drug_cold_k10",
+          "random_count": 819,
+          "rn_count": 819,
+          "sha256": "fda0397245837299c34856cd68452af63c523e878aba9f02e03bf77fd96e6d7f"
+        }
+      },
+      "5": {
+        "graph": "data/benchmarks/drug_cold_k10/fold_5/A_ds.npz",
+        "test": {
+          "count": 3276,
+          "fold": 5,
+          "membership_rows": 3276,
+          "negative_count": 1638,
+          "pair_identity": "cf992eb4f3e9a071181f73300ddea7cc4abc221f90e6797822f72721761f3473",
+          "partition": "test",
+          "path": "data/benchmarks/drug_cold_k10/fold_5/test.parquet",
+          "protocol": "drug_cold_k10",
+          "random_count": 819,
+          "rn_count": 819,
+          "sha256": "9fd6f09219eef66f87d79564a4fc4bead46fd67378b2614121bba20342f3b0a0"
+        },
+        "train": {
+          "count": 26208,
+          "fold": 5,
+          "membership_rows": 26208,
+          "negative_count": 13104,
+          "pair_identity": "3e1de0c16026cac0eb430aa179d5f8ebe44149e77f3f01d885732bd50791ec9b",
+          "partition": "train",
+          "path": "data/benchmarks/drug_cold_k10/fold_5/train.parquet",
+          "protocol": "drug_cold_k10",
+          "random_count": 6552,
+          "rn_count": 6552,
+          "sha256": "bbef9f85ba98d5fa8020f1d7a506ae1ebd9901a4af171e03b3bd99928702a686"
+        },
+        "val": {
+          "count": 3276,
+          "fold": 5,
+          "membership_rows": 3276,
+          "negative_count": 1638,
+          "pair_identity": "a1613b128458553df71042b2aa71bbe7aad5169b23b49ee79318ed82897f93be",
+          "partition": "val",
+          "path": "data/benchmarks/drug_cold_k10/fold_5/val.parquet",
+          "protocol": "drug_cold_k10",
+          "random_count": 819,
+          "rn_count": 819,
+          "sha256": "9b966478faa85691889b052c1a9a81935588142fca9ece6a17030942a6452d9a"
+        }
+      },
+      "6": {
+        "graph": "data/benchmarks/drug_cold_k10/fold_6/A_ds.npz",
+        "test": {
+          "count": 3276,
+          "fold": 6,
+          "membership_rows": 3276,
+          "negative_count": 1638,
+          "pair_identity": "486f1ca962d1fa74a558b55a297439e723eae656ce9f74c2ee6ad0547c09dd49",
+          "partition": "test",
+          "path": "data/benchmarks/drug_cold_k10/fold_6/test.parquet",
+          "protocol": "drug_cold_k10",
+          "random_count": 819,
+          "rn_count": 819,
+          "sha256": "2881dcd133d1e96e45ed6755247802ba52e0b717dd0f4e741ff64896be3a1ee9"
+        },
+        "train": {
+          "count": 26208,
+          "fold": 6,
+          "membership_rows": 26208,
+          "negative_count": 13104,
+          "pair_identity": "e24b96192bb42fb51bc37a63c195a329eb1143493d2a501aa900134a4c92d062",
+          "partition": "train",
+          "path": "data/benchmarks/drug_cold_k10/fold_6/train.parquet",
+          "protocol": "drug_cold_k10",
+          "random_count": 6552,
+          "rn_count": 6552,
+          "sha256": "325dc9af0a387fbb1c6b2ded1e7d67cd3de1ae0e5bc32ed2bcf06a1e7fe16b66"
+        },
+        "val": {
+          "count": 3276,
+          "fold": 6,
+          "membership_rows": 3276,
+          "negative_count": 1638,
+          "pair_identity": "081c45f06bcd82ded5103b7409ed22d07cfbce869e2e9f0c55f28242028aae28",
+          "partition": "val",
+          "path": "data/benchmarks/drug_cold_k10/fold_6/val.parquet",
+          "protocol": "drug_cold_k10",
+          "random_count": 819,
+          "rn_count": 819,
+          "sha256": "3fa0ceee935e2ffa6aa1ff70fc4600e55e2f665597593bf97f6e1621e8233867"
+        }
+      },
+      "7": {
+        "graph": "data/benchmarks/drug_cold_k10/fold_7/A_ds.npz",
+        "test": {
+          "count": 3276,
+          "fold": 7,
+          "membership_rows": 3276,
+          "negative_count": 1638,
+          "pair_identity": "fe28a31696dcff9df9e49ee529cea3e132b9e0fcb960a180fc5cee869896b118",
+          "partition": "test",
+          "path": "data/benchmarks/drug_cold_k10/fold_7/test.parquet",
+          "protocol": "drug_cold_k10",
+          "random_count": 819,
+          "rn_count": 819,
+          "sha256": "dcfa6b764569c84b7535112dea0cb2275de5c73ded00eb0ed8edbec002741452"
+        },
+        "train": {
+          "count": 26208,
+          "fold": 7,
+          "membership_rows": 26208,
+          "negative_count": 13104,
+          "pair_identity": "17ae82fc4605cdbbe861848031f61505c50dfba47bb012b0ca36163f8c6434a9",
+          "partition": "train",
+          "path": "data/benchmarks/drug_cold_k10/fold_7/train.parquet",
+          "protocol": "drug_cold_k10",
+          "random_count": 6552,
+          "rn_count": 6552,
+          "sha256": "0c4cd1bfcebf7cd1ccad0521f290acb40bd3565f83db582fb3bceabeca1833d7"
+        },
+        "val": {
+          "count": 3276,
+          "fold": 7,
+          "membership_rows": 3276,
+          "negative_count": 1638,
+          "pair_identity": "15b24f48eadc8b3d33581184950a52213a35bdf6328220bcecfeb5c2d82a7c8a",
+          "partition": "val",
+          "path": "data/benchmarks/drug_cold_k10/fold_7/val.parquet",
+          "protocol": "drug_cold_k10",
+          "random_count": 819,
+          "rn_count": 819,
+          "sha256": "5d4038ab250b463984ee43f77c01afc2f43628be8b89ba3879db94087c1415d1"
+        }
+      },
+      "8": {
+        "graph": "data/benchmarks/drug_cold_k10/fold_8/A_ds.npz",
+        "test": {
+          "count": 3276,
+          "fold": 8,
+          "membership_rows": 3276,
+          "negative_count": 1638,
+          "pair_identity": "7adb221c4b29e6223d79feae4b1389c41f65ecb474f828930e230d02c3d1d59e",
+          "partition": "test",
+          "path": "data/benchmarks/drug_cold_k10/fold_8/test.parquet",
+          "protocol": "drug_cold_k10",
+          "random_count": 819,
+          "rn_count": 819,
+          "sha256": "47a2e63d4bf3a9eec998bc8395fe148d015e1c6335de3932f91797d82df4e082"
+        },
+        "train": {
+          "count": 26208,
+          "fold": 8,
+          "membership_rows": 26208,
+          "negative_count": 13104,
+          "pair_identity": "8d803855fe5d95fb937e22c0f3a6ae690e043dc886d409209fa2d04e6954f586",
+          "partition": "train",
+          "path": "data/benchmarks/drug_cold_k10/fold_8/train.parquet",
+          "protocol": "drug_cold_k10",
+          "random_count": 6552,
+          "rn_count": 6552,
+          "sha256": "6f8ca3afa71f3d34db8fbc07f972e1dd76b5641d931d8496e488553faec3b43d"
+        },
+        "val": {
+          "count": 3276,
+          "fold": 8,
+          "membership_rows": 3276,
+          "negative_count": 1638,
+          "pair_identity": "361ef5e87e62bd8284dec5e7dead0734d2ef777c88ba8a8df22619c667ea74f6",
+          "partition": "val",
+          "path": "data/benchmarks/drug_cold_k10/fold_8/val.parquet",
+          "protocol": "drug_cold_k10",
+          "random_count": 819,
+          "rn_count": 819,
+          "sha256": "346893ceaad9f811d45d2a33bf6580682ce2e12cf31a122085b6a5c23cc2e32b"
+        }
+      },
+      "9": {
+        "graph": "data/benchmarks/drug_cold_k10/fold_9/A_ds.npz",
+        "test": {
+          "count": 3276,
+          "fold": 9,
+          "membership_rows": 3276,
+          "negative_count": 1638,
+          "pair_identity": "4a3f7deae6d6d878396b201fe666adde640f46a7677095b6e3b45631298c5a94",
+          "partition": "test",
+          "path": "data/benchmarks/drug_cold_k10/fold_9/test.parquet",
+          "protocol": "drug_cold_k10",
+          "random_count": 819,
+          "rn_count": 819,
+          "sha256": "ec3a3479a08a7393ac5fd7559d581dafb875749b357231a2d1f5355ee5ddb485"
+        },
+        "train": {
+          "count": 26208,
+          "fold": 9,
+          "membership_rows": 26208,
+          "negative_count": 13104,
+          "pair_identity": "8f58088f08de0e0b4c6c28088de1a648aa6d186f4d7b08f81266c086a33fc339",
+          "partition": "train",
+          "path": "data/benchmarks/drug_cold_k10/fold_9/train.parquet",
+          "protocol": "drug_cold_k10",
+          "random_count": 6552,
+          "rn_count": 6552,
+          "sha256": "874d7ca6eccac357a61f845ce4427d2a4becaed59bca46a5b1870468a87a7437"
+        },
+        "val": {
+          "count": 3276,
+          "fold": 9,
+          "membership_rows": 3276,
+          "negative_count": 1638,
+          "pair_identity": "260f1bc038947f3212efa16b8b7920e3c7de1049b4565632f737b20301902334",
+          "partition": "val",
+          "path": "data/benchmarks/drug_cold_k10/fold_9/val.parquet",
+          "protocol": "drug_cold_k10",
+          "random_count": 819,
+          "rn_count": 819,
+          "sha256": "7e67f0a0ca204a83174713e52eaa8d764b801db68b8dcca108c63ce240ee8d79"
+        }
+      }
+    },
+    "strict_both_k5": {
+      "0": {
+        "graph": "data/benchmarks/strict_both_k5/fold_0/A_ds.npz",
+        "test": {
+          "count": 1254,
+          "fold": 0,
+          "membership_rows": 1254,
+          "negative_count": 627,
+          "pair_identity": "ac176f7957bee179733451ce41c0a8f4ed576e63f478ee2872f8988d5edd5423",
+          "partition": "test",
+          "path": "data/benchmarks/strict_both_k5/fold_0/test.parquet",
+          "protocol": "strict_both_k5",
+          "random_count": 314,
+          "rn_count": 313,
+          "sha256": "17100f280eebc951387cf0028c0a7b3de12e5dabec62ccd16f197b602b04d3fe"
+        },
+        "train": {
+          "count": 11846,
+          "fold": 0,
+          "membership_rows": 11846,
+          "negative_count": 5923,
+          "pair_identity": "f86a155026d33bab6dddc8d4841efdc999c571d38de62da8a5594a83bb00c986",
+          "partition": "train",
+          "path": "data/benchmarks/strict_both_k5/fold_0/train.parquet",
+          "protocol": "strict_both_k5",
+          "random_count": 2962,
+          "rn_count": 2961,
+          "sha256": "8acfa355e477e318c7f918b8e26b87e5f471f0d6493c76e59ea52f0164e1b3f0"
+        },
+        "val": {
+          "count": 1278,
+          "fold": 0,
+          "membership_rows": 1278,
+          "negative_count": 639,
+          "pair_identity": "4d5963ead7b338a0a494cd75512eb46563fbcec1f2bec1fdb82ff2b7e80bdd9c",
+          "partition": "val",
+          "path": "data/benchmarks/strict_both_k5/fold_0/val.parquet",
+          "protocol": "strict_both_k5",
+          "random_count": 319,
+          "rn_count": 320,
+          "sha256": "c2d90042bff1e715fe64b728172f95ca28f6e7da7b89a9c7fafc065f5700187b"
+        }
+      },
+      "1": {
+        "graph": "data/benchmarks/strict_both_k5/fold_1/A_ds.npz",
+        "test": {
+          "count": 1278,
+          "fold": 1,
+          "membership_rows": 1278,
+          "negative_count": 639,
+          "pair_identity": "592757b24553133175fd99201be04280ae23fd7ddfa413861533895e640492a0",
+          "partition": "test",
+          "path": "data/benchmarks/strict_both_k5/fold_1/test.parquet",
+          "protocol": "strict_both_k5",
+          "random_count": 319,
+          "rn_count": 320,
+          "sha256": "f1d10f921181d48c07404c68cce69ee66f87423b43dc3b10e31dec76da8ad831"
+        },
+        "train": {
+          "count": 11714,
+          "fold": 1,
+          "membership_rows": 11714,
+          "negative_count": 5857,
+          "pair_identity": "439b38264dc896f89bcbbfc4c2c0bcac5d7b6f42688bdede408c6db59ee2099b",
+          "partition": "train",
+          "path": "data/benchmarks/strict_both_k5/fold_1/train.parquet",
+          "protocol": "strict_both_k5",
+          "random_count": 2928,
+          "rn_count": 2929,
+          "sha256": "39f74898f37a8b6c7f1cf8df6a0b1a6725d5e117729e620127be2296c89cbf2a"
+        },
+        "val": {
+          "count": 1250,
+          "fold": 1,
+          "membership_rows": 1250,
+          "negative_count": 625,
+          "pair_identity": "a05f2d843cf6c38649575c37d4cb6da3445231a9405bafd5451fd9da8fa5879c",
+          "partition": "val",
+          "path": "data/benchmarks/strict_both_k5/fold_1/val.parquet",
+          "protocol": "strict_both_k5",
+          "random_count": 313,
+          "rn_count": 312,
+          "sha256": "fa5e6249260384160292a8942050a71c2c1411546a00a2fad908db4b488ec0d2"
+        }
+      },
+      "2": {
+        "graph": "data/benchmarks/strict_both_k5/fold_2/A_ds.npz",
+        "test": {
+          "count": 1250,
+          "fold": 2,
+          "membership_rows": 1250,
+          "negative_count": 625,
+          "pair_identity": "1927da8e320df9590d0ec15f0f16bf82a49107cf9ed87af3aa4ea57c19580bd9",
+          "partition": "test",
+          "path": "data/benchmarks/strict_both_k5/fold_2/test.parquet",
+          "protocol": "strict_both_k5",
+          "random_count": 312,
+          "rn_count": 313,
+          "sha256": "ec86b5fd92ffb9dda7ebea6c7df6284cc928124d22a858c53bdbcad79d7b07ac"
+        },
+        "train": {
+          "count": 11802,
+          "fold": 2,
+          "membership_rows": 11802,
+          "negative_count": 5901,
+          "pair_identity": "1fdf499d24f28720e5daffa018434970025e1c2d0bd117c404797c9281dbd8e6",
+          "partition": "train",
+          "path": "data/benchmarks/strict_both_k5/fold_2/train.parquet",
+          "protocol": "strict_both_k5",
+          "random_count": 2951,
+          "rn_count": 2950,
+          "sha256": "7339f09144f86489fd68e7097df23ffdf25d241f8f777e58a60fb48c3bb17296"
+        },
+        "val": {
+          "count": 1268,
+          "fold": 2,
+          "membership_rows": 1268,
+          "negative_count": 634,
+          "pair_identity": "4c894b34718bee49aa47886dd3b98d681535dc14511d30f23d753ab52f84a3ec",
+          "partition": "val",
+          "path": "data/benchmarks/strict_both_k5/fold_2/val.parquet",
+          "protocol": "strict_both_k5",
+          "random_count": 317,
+          "rn_count": 317,
+          "sha256": "9f7823ad602b419ac220818a31fa84424b226f54c8ba44429efeed93a4dcb531"
+        }
+      },
+      "3": {
+        "graph": "data/benchmarks/strict_both_k5/fold_3/A_ds.npz",
+        "test": {
+          "count": 1268,
+          "fold": 3,
+          "membership_rows": 1268,
+          "negative_count": 634,
+          "pair_identity": "ead12723156eff6441b1e6c92b6ea6b6088374cbdd1645489a42574457baac81",
+          "partition": "test",
+          "path": "data/benchmarks/strict_both_k5/fold_3/test.parquet",
+          "protocol": "strict_both_k5",
+          "random_count": 317,
+          "rn_count": 317,
+          "sha256": "bfcbe83eaf6de3f870b7e8b8206d7ed2d2d5b6def8c79773631cbdac53bbe81e"
+        },
+        "train": {
+          "count": 11766,
+          "fold": 3,
+          "membership_rows": 11766,
+          "negative_count": 5883,
+          "pair_identity": "2f82b6b688b6c82528056343416f883bec463451e19827ff66756289821b5760",
+          "partition": "train",
+          "path": "data/benchmarks/strict_both_k5/fold_3/train.parquet",
+          "protocol": "strict_both_k5",
+          "random_count": 2942,
+          "rn_count": 2941,
+          "sha256": "74183265010be445d92a3b8ca9510175303c577f37029180d7cafbf220be3724"
+        },
+        "val": {
+          "count": 1318,
+          "fold": 3,
+          "membership_rows": 1318,
+          "negative_count": 659,
+          "pair_identity": "04421b67946e607c339df37584297ca4cbd6b47cd8cbdd8ab74c0c26709e01e3",
+          "partition": "val",
+          "path": "data/benchmarks/strict_both_k5/fold_3/val.parquet",
+          "protocol": "strict_both_k5",
+          "random_count": 329,
+          "rn_count": 330,
+          "sha256": "48571cde49445db46f302c919fb7c8e484275ec1223cddeb4e60dcc27d317006"
+        }
+      },
+      "4": {
+        "graph": "data/benchmarks/strict_both_k5/fold_4/A_ds.npz",
+        "test": {
+          "count": 1318,
+          "fold": 4,
+          "membership_rows": 1318,
+          "negative_count": 659,
+          "pair_identity": "6345a4ed0c3bd48165bc1c8682ec57c26e8f172143988968756e3ae09ef31f10",
+          "partition": "test",
+          "path": "data/benchmarks/strict_both_k5/fold_4/test.parquet",
+          "protocol": "strict_both_k5",
+          "random_count": 329,
+          "rn_count": 330,
+          "sha256": "009e6be07431294a32fc7f8f0bcc7d8bb7a564d87e810971d8144f53ec841c57"
+        },
+        "train": {
+          "count": 11688,
+          "fold": 4,
+          "membership_rows": 11688,
+          "negative_count": 5844,
+          "pair_identity": "372406b8feb0008ae5b9771169f7c60616dd856f7902a5a1594d003a2f73e86f",
+          "partition": "train",
+          "path": "data/benchmarks/strict_both_k5/fold_4/train.parquet",
+          "protocol": "strict_both_k5",
+          "random_count": 2922,
+          "rn_count": 2922,
+          "sha256": "33c59ec98918fd37e2895d481e71ebb87897b3d70507b77857e65f22c0713984"
+        },
+        "val": {
+          "count": 1254,
+          "fold": 4,
+          "membership_rows": 1254,
+          "negative_count": 627,
+          "pair_identity": "f06b84be3f0c38dfc416e77b05933e77aa63f29c8d71a088cfd4066fe9846339",
+          "partition": "val",
+          "path": "data/benchmarks/strict_both_k5/fold_4/val.parquet",
+          "protocol": "strict_both_k5",
+          "random_count": 314,
+          "rn_count": 313,
+          "sha256": "30ee603b4949df5f871d5e90c3f275fc8e83598070de2b38b4fcc2e999e4a926"
+        }
+      }
+    },
+    "warm_k10": {
+      "0": {
+        "graph": "data/benchmarks/warm_k10/fold_0/A_ds.npz",
+        "test": {
+          "count": 3276,
+          "fold": 0,
+          "membership_rows": 3276,
+          "negative_count": 1638,
+          "pair_identity": "2689c67840295e00b9ebbdb4ce097ca6cb839724d22924c0f74d330f7df09da1",
+          "partition": "test",
+          "path": "data/benchmarks/warm_k10/fold_0/test.parquet",
+          "protocol": "warm_k10",
+          "random_count": 819,
+          "rn_count": 819,
+          "sha256": "33ba85ecc0da596d2a3287e1c0f1cf165a0363f8677f8f5fe9bc1a8cac65258e"
+        },
+        "train": {
+          "count": 26208,
+          "fold": 0,
+          "membership_rows": 26208,
+          "negative_count": 13104,
+          "pair_identity": "c7fa4073ec86335f1c6f573613ee4a3848f8303be28b1ab2c02d56fb9aa1e09a",
+          "partition": "train",
+          "path": "data/benchmarks/warm_k10/fold_0/train.parquet",
+          "protocol": "warm_k10",
+          "random_count": 6552,
+          "rn_count": 6552,
+          "sha256": "5eaea498c481b64f2097b2152728c497df014087c8a34bd3a3c333412446bbd8"
+        },
+        "val": {
+          "count": 3276,
+          "fold": 0,
+          "membership_rows": 3276,
+          "negative_count": 1638,
+          "pair_identity": "5436094456977e68e309e71c0208fb1b959fc5ac34cdee5110057b5800437660",
+          "partition": "val",
+          "path": "data/benchmarks/warm_k10/fold_0/val.parquet",
+          "protocol": "warm_k10",
+          "random_count": 819,
+          "rn_count": 819,
+          "sha256": "1cf23451a7e4683321bf438257bcc2e3f561fa3f29a09de3d828a109392751ea"
+        }
+      },
+      "1": {
+        "graph": "data/benchmarks/warm_k10/fold_1/A_ds.npz",
+        "test": {
+          "count": 3276,
+          "fold": 1,
+          "membership_rows": 3276,
+          "negative_count": 1638,
+          "pair_identity": "5436094456977e68e309e71c0208fb1b959fc5ac34cdee5110057b5800437660",
+          "partition": "test",
+          "path": "data/benchmarks/warm_k10/fold_1/test.parquet",
+          "protocol": "warm_k10",
+          "random_count": 819,
+          "rn_count": 819,
+          "sha256": "1cf23451a7e4683321bf438257bcc2e3f561fa3f29a09de3d828a109392751ea"
+        },
+        "train": {
+          "count": 26208,
+          "fold": 1,
+          "membership_rows": 26208,
+          "negative_count": 13104,
+          "pair_identity": "fc275e5ba5716eb748826a478a3b270e900e52091ecbc74cc97ad56580e0c5e4",
+          "partition": "train",
+          "path": "data/benchmarks/warm_k10/fold_1/train.parquet",
+          "protocol": "warm_k10",
+          "random_count": 6552,
+          "rn_count": 6552,
+          "sha256": "e11beac3139f1fb957955ee0736a10403828d8ab6ffd8e060ceac2bfc8f941b2"
+        },
+        "val": {
+          "count": 3276,
+          "fold": 1,
+          "membership_rows": 3276,
+          "negative_count": 1638,
+          "pair_identity": "3f72aad97d3dd74c02a9307a72c9a6f79043b22cef2c3df3bd9ca91fe0433c20",
+          "partition": "val",
+          "path": "data/benchmarks/warm_k10/fold_1/val.parquet",
+          "protocol": "warm_k10",
+          "random_count": 819,
+          "rn_count": 819,
+          "sha256": "a12d51cb5436b6beee26a7028f947ff2aaaaa8a9cda2dd4da5da848b3bf00435"
+        }
+      },
+      "2": {
+        "graph": "data/benchmarks/warm_k10/fold_2/A_ds.npz",
+        "test": {
+          "count": 3276,
+          "fold": 2,
+          "membership_rows": 3276,
+          "negative_count": 1638,
+          "pair_identity": "3f72aad97d3dd74c02a9307a72c9a6f79043b22cef2c3df3bd9ca91fe0433c20",
+          "partition": "test",
+          "path": "data/benchmarks/warm_k10/fold_2/test.parquet",
+          "protocol": "warm_k10",
+          "random_count": 819,
+          "rn_count": 819,
+          "sha256": "a12d51cb5436b6beee26a7028f947ff2aaaaa8a9cda2dd4da5da848b3bf00435"
+        },
+        "train": {
+          "count": 26208,
+          "fold": 2,
+          "membership_rows": 26208,
+          "negative_count": 13104,
+          "pair_identity": "193b486741f6e8d17ed8686408bc9190e9c8b4150647c3c3dbf356a9f0c46c9c",
+          "partition": "train",
+          "path": "data/benchmarks/warm_k10/fold_2/train.parquet",
+          "protocol": "warm_k10",
+          "random_count": 6552,
+          "rn_count": 6552,
+          "sha256": "641618b4c54432fa8ae29e046f6d1f09a384c00080527c5a0b36f82f93c255cd"
+        },
+        "val": {
+          "count": 3276,
+          "fold": 2,
+          "membership_rows": 3276,
+          "negative_count": 1638,
+          "pair_identity": "59d50fe9499a4edeecae92d6535d084ceecf44497201efa03d1e12cf5498a677",
+          "partition": "val",
+          "path": "data/benchmarks/warm_k10/fold_2/val.parquet",
+          "protocol": "warm_k10",
+          "random_count": 819,
+          "rn_count": 819,
+          "sha256": "120a738a03d61d834df2ca183f2bc0e9ee446daa0ef4bdd02b653e0baed2435a"
+        }
+      },
+      "3": {
+        "graph": "data/benchmarks/warm_k10/fold_3/A_ds.npz",
+        "test": {
+          "count": 3276,
+          "fold": 3,
+          "membership_rows": 3276,
+          "negative_count": 1638,
+          "pair_identity": "59d50fe9499a4edeecae92d6535d084ceecf44497201efa03d1e12cf5498a677",
+          "partition": "test",
+          "path": "data/benchmarks/warm_k10/fold_3/test.parquet",
+          "protocol": "warm_k10",
+          "random_count": 819,
+          "rn_count": 819,
+          "sha256": "120a738a03d61d834df2ca183f2bc0e9ee446daa0ef4bdd02b653e0baed2435a"
+        },
+        "train": {
+          "count": 26208,
+          "fold": 3,
+          "membership_rows": 26208,
+          "negative_count": 13104,
+          "pair_identity": "7792977490cbf1cbb75a0b582eacfe3ff12a0a2dc2dc27ba1f8177994d16b267",
+          "partition": "train",
+          "path": "data/benchmarks/warm_k10/fold_3/train.parquet",
+          "protocol": "warm_k10",
+          "random_count": 6552,
+          "rn_count": 6552,
+          "sha256": "c98f4119f242f6cea7299edf087263b24252861d4ea37e63d753f49b3d8d1be1"
+        },
+        "val": {
+          "count": 3276,
+          "fold": 3,
+          "membership_rows": 3276,
+          "negative_count": 1638,
+          "pair_identity": "1dfe6dc3c0ae8c9f9e2f944c45d3c61f402a02330a8c5ee32f0fa476800259b4",
+          "partition": "val",
+          "path": "data/benchmarks/warm_k10/fold_3/val.parquet",
+          "protocol": "warm_k10",
+          "random_count": 819,
+          "rn_count": 819,
+          "sha256": "08c6ba2095170df626da4292bbb813a1fa97dd20d5c2304f5a9f60bc17a43795"
+        }
+      },
+      "4": {
+        "graph": "data/benchmarks/warm_k10/fold_4/A_ds.npz",
+        "test": {
+          "count": 3276,
+          "fold": 4,
+          "membership_rows": 3276,
+          "negative_count": 1638,
+          "pair_identity": "1dfe6dc3c0ae8c9f9e2f944c45d3c61f402a02330a8c5ee32f0fa476800259b4",
+          "partition": "test",
+          "path": "data/benchmarks/warm_k10/fold_4/test.parquet",
+          "protocol": "warm_k10",
+          "random_count": 819,
+          "rn_count": 819,
+          "sha256": "08c6ba2095170df626da4292bbb813a1fa97dd20d5c2304f5a9f60bc17a43795"
+        },
+        "train": {
+          "count": 26208,
+          "fold": 4,
+          "membership_rows": 26208,
+          "negative_count": 13104,
+          "pair_identity": "a0fb3d6875a338beeb3e15969bb2a8f0208c907e8290483ae1266d7fc2066900",
+          "partition": "train",
+          "path": "data/benchmarks/warm_k10/fold_4/train.parquet",
+          "protocol": "warm_k10",
+          "random_count": 6552,
+          "rn_count": 6552,
+          "sha256": "fd18f31c4fed407d56b140bead1bf80e13006e8c1076b5629aaabebe35d69373"
+        },
+        "val": {
+          "count": 3276,
+          "fold": 4,
+          "membership_rows": 3276,
+          "negative_count": 1638,
+          "pair_identity": "1c58a9231250e7b955a2fdbb61812d35ef3013a6f179afb8bde220bcef9bbee8",
+          "partition": "val",
+          "path": "data/benchmarks/warm_k10/fold_4/val.parquet",
+          "protocol": "warm_k10",
+          "random_count": 819,
+          "rn_count": 819,
+          "sha256": "1746abda458a821dd0932b8daf620c443e944e89bc1de2ffb5c7ccf122ed8d35"
+        }
+      },
+      "5": {
+        "graph": "data/benchmarks/warm_k10/fold_5/A_ds.npz",
+        "test": {
+          "count": 3276,
+          "fold": 5,
+          "membership_rows": 3276,
+          "negative_count": 1638,
+          "pair_identity": "1c58a9231250e7b955a2fdbb61812d35ef3013a6f179afb8bde220bcef9bbee8",
+          "partition": "test",
+          "path": "data/benchmarks/warm_k10/fold_5/test.parquet",
+          "protocol": "warm_k10",
+          "random_count": 819,
+          "rn_count": 819,
+          "sha256": "1746abda458a821dd0932b8daf620c443e944e89bc1de2ffb5c7ccf122ed8d35"
+        },
+        "train": {
+          "count": 26208,
+          "fold": 5,
+          "membership_rows": 26208,
+          "negative_count": 13104,
+          "pair_identity": "5ab5df22e0c9c8d5a1ee688e5e0533bbfe91b1625544246488c566f33113718c",
+          "partition": "train",
+          "path": "data/benchmarks/warm_k10/fold_5/train.parquet",
+          "protocol": "warm_k10",
+          "random_count": 6552,
+          "rn_count": 6552,
+          "sha256": "a3ce1b116c4cf976cb8f01167cc19cb714a6d560682ea1800d4bf0aaad186215"
+        },
+        "val": {
+          "count": 3276,
+          "fold": 5,
+          "membership_rows": 3276,
+          "negative_count": 1638,
+          "pair_identity": "7f85bfa10dc5cd8ab28a1cfc9750669f726b96ed9f91473c97394fc93941096c",
+          "partition": "val",
+          "path": "data/benchmarks/warm_k10/fold_5/val.parquet",
+          "protocol": "warm_k10",
+          "random_count": 819,
+          "rn_count": 819,
+          "sha256": "865015c0b647acb161705d0470901d28204c66ccd3426e8a17e4056a6f4a790b"
+        }
+      },
+      "6": {
+        "graph": "data/benchmarks/warm_k10/fold_6/A_ds.npz",
+        "test": {
+          "count": 3276,
+          "fold": 6,
+          "membership_rows": 3276,
+          "negative_count": 1638,
+          "pair_identity": "7f85bfa10dc5cd8ab28a1cfc9750669f726b96ed9f91473c97394fc93941096c",
+          "partition": "test",
+          "path": "data/benchmarks/warm_k10/fold_6/test.parquet",
+          "protocol": "warm_k10",
+          "random_count": 819,
+          "rn_count": 819,
+          "sha256": "865015c0b647acb161705d0470901d28204c66ccd3426e8a17e4056a6f4a790b"
+        },
+        "train": {
+          "count": 26208,
+          "fold": 6,
+          "membership_rows": 26208,
+          "negative_count": 13104,
+          "pair_identity": "16c4e439568171a756bc66bd33a2540a4aa91b1d85929b39b38519103a1bd27b",
+          "partition": "train",
+          "path": "data/benchmarks/warm_k10/fold_6/train.parquet",
+          "protocol": "warm_k10",
+          "random_count": 6552,
+          "rn_count": 6552,
+          "sha256": "a38ab1fb2a8344617ea41ede3839b4e6681376c9d88a031413a42eadddd1263f"
+        },
+        "val": {
+          "count": 3276,
+          "fold": 6,
+          "membership_rows": 3276,
+          "negative_count": 1638,
+          "pair_identity": "7d57639a1d6c6ae7d6b851eb6f167f4f106e5a86f5cd88e5ce29fe9276fc82cb",
+          "partition": "val",
+          "path": "data/benchmarks/warm_k10/fold_6/val.parquet",
+          "protocol": "warm_k10",
+          "random_count": 819,
+          "rn_count": 819,
+          "sha256": "a4c9b7ae760d92e4c789c5cb4943844cc34b9613d26d00b3b87a0ed43a5502ec"
+        }
+      },
+      "7": {
+        "graph": "data/benchmarks/warm_k10/fold_7/A_ds.npz",
+        "test": {
+          "count": 3276,
+          "fold": 7,
+          "membership_rows": 3276,
+          "negative_count": 1638,
+          "pair_identity": "7d57639a1d6c6ae7d6b851eb6f167f4f106e5a86f5cd88e5ce29fe9276fc82cb",
+          "partition": "test",
+          "path": "data/benchmarks/warm_k10/fold_7/test.parquet",
+          "protocol": "warm_k10",
+          "random_count": 819,
+          "rn_count": 819,
+          "sha256": "a4c9b7ae760d92e4c789c5cb4943844cc34b9613d26d00b3b87a0ed43a5502ec"
+        },
+        "train": {
+          "count": 26208,
+          "fold": 7,
+          "membership_rows": 26208,
+          "negative_count": 13104,
+          "pair_identity": "59a656bedc690d9ac71250a1f01d3993317026a1523bd0cbbd09bd946122dbb7",
+          "partition": "train",
+          "path": "data/benchmarks/warm_k10/fold_7/train.parquet",
+          "protocol": "warm_k10",
+          "random_count": 6552,
+          "rn_count": 6552,
+          "sha256": "eaa1eccb10cdbc3a98d01b53020f26c05b580180710f08c47b97b976f28db8aa"
+        },
+        "val": {
+          "count": 3276,
+          "fold": 7,
+          "membership_rows": 3276,
+          "negative_count": 1638,
+          "pair_identity": "7debb794c1b7caf5bfadc0f16549c6d888ab35797c960ff65af65baa880616bc",
+          "partition": "val",
+          "path": "data/benchmarks/warm_k10/fold_7/val.parquet",
+          "protocol": "warm_k10",
+          "random_count": 819,
+          "rn_count": 819,
+          "sha256": "2ce757a03ac5ec759eda2ac4fbf2ef809a2ad3442c88b57d088ceba387dd66a3"
+        }
+      },
+      "8": {
+        "graph": "data/benchmarks/warm_k10/fold_8/A_ds.npz",
+        "test": {
+          "count": 3276,
+          "fold": 8,
+          "membership_rows": 3276,
+          "negative_count": 1638,
+          "pair_identity": "7debb794c1b7caf5bfadc0f16549c6d888ab35797c960ff65af65baa880616bc",
+          "partition": "test",
+          "path": "data/benchmarks/warm_k10/fold_8/test.parquet",
+          "protocol": "warm_k10",
+          "random_count": 819,
+          "rn_count": 819,
+          "sha256": "2ce757a03ac5ec759eda2ac4fbf2ef809a2ad3442c88b57d088ceba387dd66a3"
+        },
+        "train": {
+          "count": 26208,
+          "fold": 8,
+          "membership_rows": 26208,
+          "negative_count": 13104,
+          "pair_identity": "53191a3aeb04eaf3d778665f90caebd369c42d9d5e4771670564ffa1c7b375cc",
+          "partition": "train",
+          "path": "data/benchmarks/warm_k10/fold_8/train.parquet",
+          "protocol": "warm_k10",
+          "random_count": 6552,
+          "rn_count": 6552,
+          "sha256": "c64789112c48512698e2a4f412e581bc72540f8b1facd1156485162f22df4618"
+        },
+        "val": {
+          "count": 3276,
+          "fold": 8,
+          "membership_rows": 3276,
+          "negative_count": 1638,
+          "pair_identity": "61c45fa49d899d48eac48ca3ac5fa338b55732de4fc1c981006ff40bd13107af",
+          "partition": "val",
+          "path": "data/benchmarks/warm_k10/fold_8/val.parquet",
+          "protocol": "warm_k10",
+          "random_count": 819,
+          "rn_count": 819,
+          "sha256": "c08215d97285a91a06acc86f47f14f50aff4120766f9f71d23097a3f64a5b0ed"
+        }
+      },
+      "9": {
+        "graph": "data/benchmarks/warm_k10/fold_9/A_ds.npz",
+        "test": {
+          "count": 3276,
+          "fold": 9,
+          "membership_rows": 3276,
+          "negative_count": 1638,
+          "pair_identity": "61c45fa49d899d48eac48ca3ac5fa338b55732de4fc1c981006ff40bd13107af",
+          "partition": "test",
+          "path": "data/benchmarks/warm_k10/fold_9/test.parquet",
+          "protocol": "warm_k10",
+          "random_count": 819,
+          "rn_count": 819,
+          "sha256": "c08215d97285a91a06acc86f47f14f50aff4120766f9f71d23097a3f64a5b0ed"
+        },
+        "train": {
+          "count": 26208,
+          "fold": 9,
+          "membership_rows": 26208,
+          "negative_count": 13104,
+          "pair_identity": "62a7ef734b9267cbb802803fce66069f3ac6ee452d0a2768106451e831035a01",
+          "partition": "train",
+          "path": "data/benchmarks/warm_k10/fold_9/train.parquet",
+          "protocol": "warm_k10",
+          "random_count": 6552,
+          "rn_count": 6552,
+          "sha256": "ddeed856dd669c1e927978ce4fa2d3590b403cb76285cef2289cb39679686e48"
+        },
+        "val": {
+          "count": 3276,
+          "fold": 9,
+          "membership_rows": 3276,
+          "negative_count": 1638,
+          "pair_identity": "2689c67840295e00b9ebbdb4ce097ca6cb839724d22924c0f74d330f7df09da1",
+          "partition": "val",
+          "path": "data/benchmarks/warm_k10/fold_9/val.parquet",
+          "protocol": "warm_k10",
+          "random_count": 819,
+          "rn_count": 819,
+          "sha256": "33ba85ecc0da596d2a3287e1c0f1cf165a0363f8677f8f5fe9bc1a8cac65258e"
+        }
+      }
+    }
+  },
+  "resampling": false,
+  "schema": "DDA5_1_BENCHMARK_CLOSURE_V2"
+}

@@ -1,0 +1,52 @@
+{
+  "schedule": {
+    "seed": 2026,
+    "batch_size": 32,
+    "microbatch": 32,
+    "eval_batch_size": 32,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0,
+    "gradient_clip": 1.0,
+    "max_epochs": 5,
+    "patience": 2,
+    "checkpoint_every_steps": 20
+  },
+  "upstream_gcn_schedule": {
+    "batch_size": 32,
+    "microbatch": 32,
+    "eval_batch_size": 256,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0,
+    "gradient_clip": 1.0,
+    "max_epochs": 5,
+    "patience": 2
+  },
+  "optimizer": {
+    "name": "Adam",
+    "scheduler": "none",
+    "betas": [0.9, 0.999],
+    "eps": 1e-08,
+    "note": "betas 和 eps 沿用 PyTorch 默认值"
+  },
+  "precision": {
+    "trainable_modules": "FP32",
+    "frozen_llm": "BF16"
+  },
+  "ordering": "以不可变的 Parquet 行序为基础，按 torch.randperm(seed + epoch + 701) 排列",
+  "determinism": {
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+    "torch_use_deterministic_algorithms": true,
+    "cudnn_benchmark": false,
+    "cudnn_deterministic": true,
+    "allow_tf32": false
+  },
+  "initialization": {
+    "gcn": "线性权重采用 Xavier 均匀初始化，偏置为 0",
+    "reader": "使用 seed+211 构造，使用 seed+307 重置 v_proj 和 out_proj",
+    "memory": "执行 seed_everything(seed+401) 后构造",
+    "gate": "alpha=0，以 FP64 计算 initial_logit=log((0.01)/(1-0.01))",
+    "evidence_model": "执行 seed_everything(seed) 后构造"
+  },
+  "trainable_groups": ["gcn", "memory", "reader", "gate"],
+  "frozen_groups": ["llm", "lm_head_rows"]
+}

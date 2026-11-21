@@ -1,0 +1,76 @@
+{
+  "project": "MGTCUEI",
+  "internal_name": "DDA5.2",
+  "architecture_family": "PURE_CUEI",
+  "mainline": "T2_ORIG_SEMANTIC",
+  "frozen_source_identity": "a07d0add0a0f3dd934405b183c50d8032b673d71dd4ad9cbc8aa9e99d22e897c",
+  "graph_encoder": {
+    "topology": "GCN-ORIG",
+    "mode": "original",
+    "input_dim": 256,
+    "hidden_dim": 128,
+    "output_dim": 128,
+    "layers": 2,
+    "dropout": 0.2,
+    "activation": "ReLU",
+    "normalization": "对称加权归一化 D^-1/2 A D^-1/2",
+    "self_loops_added": false,
+    "parameter_count": 49408
+  },
+  "memory": {
+    "type": "TypedMemory",
+    "mode": "typed_ddi",
+    "slot_names": ["drug", "disease", "interaction_feature"],
+    "slot_source_dims": [128, 128, 256],
+    "slot_dim": 512,
+    "adapter": "Linear + LayerNorm",
+    "parameter_count": 266752
+  },
+  "cuei": {
+    "reader": "cross_attention",
+    "query": "当前 LLM 隐藏状态",
+    "key_value": "三个类型化记忆槽位",
+    "heads": 8,
+    "head_dim": 64,
+    "attention_scale": 8.0,
+    "shared_across_injection_layers": true,
+    "parameter_count": 4719616,
+    "injection_span": "U29-2L",
+    "injection_layers_zero_based": [29, 30],
+    "gate": "learned",
+    "gate_formula": "sigmoid(initial_logit + alpha)",
+    "gate_lambda_init": 0.01,
+    "gate_epsilon": 1e-06,
+    "gate_parameter_count": 2,
+    "residual": "h + mask * lambda * RMS(h).detach() * c / max(RMS(c), eps)"
+  },
+  "llm": {
+    "name": "MMed-Llama-3-8B",
+    "frozen": true,
+    "layers": 32,
+    "hidden_dim": 4096,
+    "vocab_size": 128256,
+    "dtype": "bfloat16",
+    "tie_word_embeddings": false
+  },
+  "readout": {
+    "type": "FrozenBinaryReadout",
+    "contract_version": "DDA5_2_FROZEN_LM_TRUE_FALSE_READOUT_V1",
+    "false_token": "False",
+    "false_token_id": 4139,
+    "true_token": "True",
+    "true_token_id": 2575,
+    "logit_order": ["False", "True"],
+    "score": "logit_true - logit_false",
+    "trainable_classifier_parameters": 0
+  },
+  "prompt": "semantic_compact_v1",
+  "parameters": {
+    "total": 8035305218,
+    "trainable": 5035778,
+    "frozen": 8030269440,
+    "per_module": {"gcn": 49408, "memory": 266752, "reader": 4719616, "gate": 2},
+    "frozen_llm": 8030261248,
+    "frozen_lm_head_rows": 8192
+  }
+}

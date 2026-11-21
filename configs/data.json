@@ -1,0 +1,41 @@
+{
+  "nodes": 4235,
+  "drugs": 3084,
+  "diseases": 1151,
+  "drug_index_range": [0, 3084],
+  "disease_index_range": [0, 1151],
+  "disease_graph_offset": 3084,
+  "node_feature_dim": 256,
+  "node_feature_dtype": "float32",
+  "node_feature_sha256": "e94c475f2b1433470447e376bb2cb79e555c2749fba4d1ef53b8252404aebe99",
+  "a_ss_sha256": "981348766fce82938669cc6b491f8a4d1da27688c9ae8ef15c73266c16749bd0",
+  "a_ss_nnz": 29331,
+  "a_ss_diagonal": 1151,
+  "positive_authority": 16380,
+  "formal_negative_pool": 255100,
+  "formal_labeled_pairs": 271480,
+  "prompt_candidate_pair_universe": 651855,
+  "prompt_styles": ["basic_name_only_v1", "semantic_compact_v1"],
+  "negative_origin": ["POSITIVE", "RN", "RANDOM"],
+  "hybrid_negative_rule": "每个分区的负例由 50% 可靠负例（RN）和 50% 从合规未标注配对中均匀随机抽取的样本组成，正负例比例为 1:1。正式实验使用随附的冻结划分及其 negative_origin 计数。训练使用项目种子 2026，复现实验时直接读取随附划分。",
+  "protocols": {
+    "warm_k10": {"folds": 10, "phase": "P7", "held_out_axis": "none", "train_rows": 26208, "val_rows_per_fold": 3276, "test_rows_per_fold": 3276},
+    "drug_cold_k10": {"folds": 10, "phase": "P6", "held_out_axis": "drug", "train_rows": 26208, "val_rows_per_fold": 3276, "test_rows_per_fold": 3276},
+    "disease_cold_k10": {"folds": 10, "phase": "P8", "held_out_axis": "disease", "train_rows": 26208, "val_rows_per_fold": 3276, "test_rows_per_fold": 3276},
+    "strict_both_k5": {"folds": 5, "phase": "P9", "held_out_axis": "drug and disease", "train_rows": 11846, "val_rows_per_fold": "1250-1318", "test_rows_per_fold": "1250-1318"}
+  },
+  "development": {
+    "train": 26208,
+    "Dev-A": 766,
+    "Dev-B": 1023,
+    "Dev-C": 784,
+    "Dev-D": 703,
+    "Dev-FINAL": 2510
+  },
+  "roles": {
+    "Train": "仅用于梯度拟合",
+    "Validation or Dev-A": "仅用于检查点选择、早停和阈值选择",
+    "Test": "每组每折只进行一次锁定评估",
+    "Dev-FINAL": "用于架构和实验分支的开发评估，合并 B、C 和 D"
+  }
+}

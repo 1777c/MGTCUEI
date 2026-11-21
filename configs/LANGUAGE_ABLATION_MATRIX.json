@@ -1,0 +1,42 @@
+{
+  "schema": "DDA5_2_LANGUAGE_ABLATION_MATRIX_V1",
+  "jobs": [
+    {
+      "experiment_id": "LANG01_MMED_MATCHED_REFERENCE",
+      "label": "MMed-Llama-3-8B 匹配参考组（重新拟合）",
+      "backbone": "MMED",
+      "class": "MATCHED_LLAMA_BACKBONE_COMPARISON",
+      "fits": 1,
+      "dev_final_evaluations": 1,
+      "shared_upstream": "GCN_PREFIT_SHARED_ACROSS_ALL_THREE_ARMS"
+    },
+    {
+      "experiment_id": "LANG02_META_LLAMA3_8B",
+      "label": "meta-llama/Meta-Llama-3-8B 通用领域骨干匹配组",
+      "backbone": "META_LLAMA",
+      "class": "MATCHED_LLAMA_BACKBONE_COMPARISON",
+      "fits": 1,
+      "dev_final_evaluations": 1,
+      "shared_upstream": "GCN_PREFIT_SHARED_ACROSS_ALL_THREE_ARMS"
+    },
+    {
+      "experiment_id": "LANG03_BIOBERT_ENCODER_CONTROL",
+      "label": "dmis-lab/biobert-base-cased-v1.2 生物医学编码器对照组",
+      "backbone": "BIOBERT",
+      "class": "BIOMEDICAL_ENCODER_CONTROL",
+      "fits": 1,
+      "dev_final_evaluations": 1,
+      "shared_upstream": "GCN_PREFIT_SHARED_ACROSS_ALL_THREE_ARMS"
+    }
+  ],
+  "partitions": {
+    "train": "train",
+    "checkpoint": "A",
+    "development": "B",
+    "report": [
+      "B",
+      "C",
+      "D"
+    ]
+  }
+}

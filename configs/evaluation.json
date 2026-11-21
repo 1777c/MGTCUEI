@@ -1,0 +1,62 @@
+{
+  "primary_metric": {
+    "name": "average_precision",
+    "formal_name": "平均精确率（AP）",
+    "implementation": "sklearn.metrics.average_precision_score",
+    "definition": "精确率–召回率曲线下的阶梯积分面积，与梯形积分 AUPRC/AUPR 分开计算",
+    "role": "检查点选择的一级指标，也用于实验分支选择和所有正式结果表"
+  },
+  "secondary_metric": {
+    "name": "roc_auc",
+    "implementation": "sklearn.metrics.roc_auc_score",
+    "role": "检查点选择的二级指标，与 AP 并列报告"
+  },
+  "reported_metrics": [
+    "average_precision",
+    "roc_auc",
+    "aupr_trapezoidal",
+    "accuracy",
+    "precision",
+    "recall",
+    "specificity",
+    "f1",
+    "mcc",
+    "brier",
+    "ece15",
+    "drug_macro_ap",
+    "disease_macro_ap",
+    "ndcg10",
+    "mrr",
+    "recall5",
+    "recall10"
+  ],
+  "threshold_free": [
+    "average_precision", "roc_auc", "aupr_trapezoidal", "brier",
+    "drug_macro_ap", "disease_macro_ap", "ndcg10", "mrr", "recall5", "recall10"
+  ],
+  "threshold_dependent": ["accuracy", "precision", "recall", "specificity", "f1", "mcc", "ece15"],
+  "report_only": ["drug_macro_ap", "disease_macro_ap"],
+  "checkpoint_selection_rule": [
+    "max validation average_precision",
+    "max validation roc_auc",
+    "min validation loss",
+    "earlier epoch"
+  ],
+  "threshold": {
+    "selection_partition": "fold-local Validation (Dev-A for the development protocol)",
+    "selection_metric": "F1",
+    "tie_break": "higher threshold",
+    "frozen_into_training_receipt": true,
+    "test_search_forbidden": true,
+    "supplementary_debug_threshold": 0.5
+  },
+  "aupr_vs_ap": {
+    "ap": "sklearn.metrics.average_precision_score",
+    "aupr": "使用 sklearn.metrics.auc(recall, precision) 计算 precision_recall_curve 下的梯形积分面积",
+    "policy": "两项指标分别报告"
+  },
+  "sample_sd": {"ddof": 1, "note": "在可用折上计算样本标准差"},
+  "tie_policy": "score descending, then pair_id ascending",
+  "significance_testing": "未进行显著性检验，各对照均为描述性比较",
+  "benchmark_label": "锁定的内部交叉验证"
+}

@@ -1,0 +1,73 @@
+{
+  "schema": "MMED_LLAMA_MANIFEST_V1",
+  "weight_shards": [
+    [
+      "model-00001-of-00007.safetensors",
+      4886466168,
+      "79f73dfe871b5cf1c4f840cee43b2338a74dcae5e1fd36457db295722afc9375"
+    ],
+    [
+      "model-00002-of-00007.safetensors",
+      4832007448,
+      "1359088fa3d8c97453b40ceacbb7a008b42bff3b99cecde606e589878df6221e"
+    ],
+    [
+      "model-00003-of-00007.safetensors",
+      4999813112,
+      "a912cf4ba178cae4ecee37abd5a3d8679614f454b3418d9470c0a54384b10a27"
+    ],
+    [
+      "model-00004-of-00007.safetensors",
+      4999813128,
+      "a7e25af49769cae27a38fbcaa555cdbe0873f09b63e8c1d8ac6c1bcc7a2d80d3"
+    ],
+    [
+      "model-00005-of-00007.safetensors",
+      4832007496,
+      "c3995d4949b37235ed7019ba4eb1abc570f697c2e76403e7e899db51780f7bb4"
+    ],
+    [
+      "model-00006-of-00007.safetensors",
+      4999813120,
+      "ef95a60b2ef9a627b0fef054ef8557057af31b3e563fc5a90957f7c86409deca"
+    ],
+    [
+      "model-00007-of-00007.safetensors",
+      2571158184,
+      "589bf6458ee16cf351f4eacfccbc5e82ea4aa2abdd64c0d5363e06dbd8d8ad04"
+    ]
+  ],
+  "interface_metadata": [
+    [
+      "config.json",
+      791,
+      "6ed40f1b14d55b81f4a1bdedd9b14661d9eb43efde2337748952b617cf486ecd"
+    ],
+    [
+      "generation_config.json",
+      121,
+      "4f2fa816bfbf714907e114ecc9117b3eac5a09a89f821227b472bf029107ac4d"
+    ],
+    [
+      "model.safetensors.index.json",
+      23950,
+      "bb83c0dcc965cf42c5bc8fa1b1d88eae170b5beb5b705297c33a6399be9d0d2d"
+    ],
+    [
+      "special_tokens_map.json",
+      301,
+      "cc2e013b7545f183ef03e079a3c91c6f364fa37e4068c512d7dd843e59024535"
+    ],
+    [
+      "tokenizer.json",
+      9084463,
+      "0ac333c83e2d107910928928b5912d8ade91594d08c7c73c4606d05c032d7632"
+    ],
+    [
+      "tokenizer_config.json",
+      51102,
+      "5f05beada81734485478a52246564e0748b5934d7c0f252ab88ee6324074b90a"
+    ]
+  ],
+  "repo_id": "Henrychur/MMed-Llama-3-8B"
+}

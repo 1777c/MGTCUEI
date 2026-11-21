@@ -1,0 +1,98 @@
+{
+  "formal_fits": {
+    "protocols": {
+      "drug_cold_k10": {
+        "phase": "P6",
+        "folds": 10,
+        "arms": [
+          "DC-GNN-ONLY",
+          "DC-FINAL-BASIC",
+          "DC-FINAL-SEMANTIC"
+        ],
+        "fits": 30
+      },
+      "warm_k10": {
+        "phase": "P7",
+        "folds": 10,
+        "arms": [
+          "W-GNN-ONLY",
+          "W-FINAL-BASIC",
+          "W-FINAL-SEMANTIC"
+        ],
+        "fits": 30
+      },
+      "disease_cold_k10": {
+        "phase": "P8",
+        "folds": 10,
+        "arms": [
+          "DiC-GNN-ONLY",
+          "DiC-FINAL-BASIC",
+          "DiC-FINAL-SEMANTIC"
+        ],
+        "fits": 30
+      },
+      "strict_both_k5": {
+        "phase": "P9",
+        "folds": 5,
+        "arms": [
+          "SB-GNN-ONLY",
+          "SB-FINAL-BASIC",
+          "SB-FINAL-SEMANTIC"
+        ],
+        "fits": 15
+      }
+    },
+    "total_fits": 105,
+    "gnn_fits": 35,
+    "evidence_fits": 70,
+    "note": "每折拟合一个上游 GCN-ORIG 预测器，既作为 GNN-only 组，也为两个证据模型组提供初始化"
+  },
+  "llm_only": {
+    "cells": 8,
+    "fold_units": 70,
+    "arms": [
+      "LLM-BASIC-ONLY",
+      "LLM-SEMANTIC-ONLY"
+    ],
+    "note": "使用冻结的 LLM 和 True/False 权重行，无优化器更新"
+  },
+  "development_ablations": {
+    "block": "Dev-FINAL (B u C u D)",
+    "primary_metric": "pooled average precision",
+    "cuei": [
+      "Injection:U30-1L",
+      "Injection:U29-2L",
+      "Injection:U28-3L",
+      "Reader:Cross-Attention",
+      "Reader:Non-Query",
+      "Reader:Mean",
+      "Gate:Learned Gate",
+      "Gate:Unit Gate",
+      "Memory:Typed DDI",
+      "Memory:Mixed-Q1"
+    ],
+    "graph_encoder": [
+      "GE01:GCN-1L",
+      "GE02R:GCN-2L",
+      "GE03:GCN-3L",
+      "GE04:GCN-4L",
+      "GE05:GAT-2L",
+      "GE06:GraphSAGE-2L"
+    ],
+    "language_backbone": [
+      "LANG01_MMED_MATCHED_REFERENCE",
+      "LANG02_META_LLAMA3_8B",
+      "LANG03_BIOBERT_ENCODER_CONTROL"
+    ]
+  },
+  "mainline": "T2_ORIG_SEMANTIC",
+  "mainline_config": {
+    "gcn": "GCN-ORIG",
+    "cuei_span": "U29-2L",
+    "reader": "cross_attention",
+    "gate": "learned",
+    "memory": "typed_ddi",
+    "prompt": "semantic_compact_v1",
+    "readout": "frozen_lm_true_false_rows"
+  }
+}

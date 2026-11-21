@@ -1,0 +1,11 @@
+{
+ "index_authority_id": "model_index_v1",
+ "source_model_version": "V1_2_0_MODEL_SOURCE_FROZEN",
+ "N_drug": 3084,
+ "N_disease": 1151,
+ "N_nodes": 4235,
+ "disease_offset": 3084,
+ "drug_index_sha256": "5197b5ea91e089104ec3fd567307b91fec246f6a2085fa4a5c9e20ca408ebfc7",
+ "disease_index_sha256": "4068af030730f116c8faab9f778126d281170b975e5f6845622e50f6d0e57960",
+ "formal_index_sha256": "49c3932c69ed4032b6a2beb4754fd78fd93b5ed7a85a800669f08cda9af1f3f0"
+}
