@@ -38,7 +38,7 @@ python scripts/predict.py --run RUN_DIR --protocol drug_cold_k10 --fold 0 --pair
 
 两组对照均使用开发训练集拟合，在 Dev-A 上选择检查点和阈值，并在合并后的 Dev-B、Dev-C 和 Dev-D 上报告结果。组件消融可运行 `python scripts/train.py --protocol cold --arm evidence_semantic --reader non_query`。其他组件选项为 `--cuei-span`、`--gate` 和 `--memory`。
 
-**图编码器（图 5(e)，表 S12）**
+**图编码器**
 
 ```bash
 python scripts/s2_graph_executor.py --arms GE01,GE02R,GE03,GE04,GE05,GE06
@@ -46,7 +46,7 @@ python scripts/s2_graph_executor.py --arms GE01,GE02R,GE03,GE04,GE05,GE06
 
 实验组依次为 GCN-1L、GCN-2L 匹配重放、GCN-3L、GCN-4L、GAT-2L 和 GraphSAGE-2L。`A,B,FINAL` 分别执行上游图编码器拟合、联合拟合和合并评估。此对照使用 `LLM_ROOT` 指定 MMed-Llama 的路径。
 
-**语言骨干（图 5(f)，表 S13）**
+**语言骨干**
 
 将 `LLM_ROOT`、`META_LLAMA_ROOT` 或 `BIOBERT_ROOT` 指向对应的本地模型目录。[Meta-Llama-3-8B](https://huggingface.co/NousResearch/Meta-Llama-3-8B/tree/315b20096dc791d381d514deb5f8bd9c8d6d3061) 和 [BioBERT](https://huggingface.co/dmis-lab/biobert-base-cased-v1.2/tree/67c9c25b46986521ca33df05d8540da1210b3256) 的来源和版本记录在 [LANGUAGE_ARMS.json](configs/LANGUAGE_ARMS.json)。
 
